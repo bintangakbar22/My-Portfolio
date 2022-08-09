@@ -1,17 +1,14 @@
 import React from "react";
 import {
     SiCplusplus,
-    SiCsharp,
     SiCss3,
     SiGit,
     SiHtml5,
     SiJavascript,
     SiMysql,
     SiPhp,
-    SiPython,
     SiReact,
     SiRedux,
-    SiTailwindcss,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -81,27 +78,6 @@ const Skills = () => {
         },
     ];
 
-    const familiar = [
-        {
-            id: 1,
-            icon: <SiTailwindcss className={iconClass} />,
-            title: "Tailwind",
-            hover: "hover:text-teal-500 dark:hover:text-teal-500",
-        },
-        {
-            id: 2,
-            icon: <SiPython className={iconClass} />,
-            title: "Python",
-            hover: "hover:text-yellow-500 dark:hover:text-yellow-500",
-        },
-        {
-            id: 3,
-            icon: <SiCsharp className={iconClass} />,
-            title: "C#",
-            hover: "hover:text-purple-600 dark:hover:text-purple-600",
-        },
-    ];
-
     return (
         <div className="w-full">
             <h1 className="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-sky-400 dark:text-indigo-900 mb-2 md:mb-4">
@@ -120,20 +96,7 @@ const Skills = () => {
                     </div>
                 ))}
             </div>
-            {/* <p className="font-semibold mb-2 md:mb-4 text-sky-400 dark:text-indigo-900">
-                Familiar
-            </p>
-            <div className="w-full flex justify-evenly items-center">
-                {familiar.map(({ id, icon, title, hover }) => (
-                    <div
-                        key={id}
-                        className={`w-3/12 flex justify-center items-center text-slate-800 dark:text-slate-50 ${hover}`}
-                    >
-                        {icon}
-                        <p className="font-semibold md:flex hidden">{title}</p>
-                    </div>
-                ))}
-            </div> */}
+           
         </div>
     );
 };
